@@ -1,0 +1,139 @@
+.App{
+    margin: 20px;
+}
+
+#page-numbers {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page-numbers > li {
+    margin-right: 0.3em;
+    color: #666;
+    user-select: none;
+    cursor: pointer;
+}
+
+#pagelimit-select{
+    height: 2.5rem;
+    font-family: 'Lato', sans-serif;;
+    border: 1px solid #b9b9b9;
+    color: #666;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    border-radius: .7rem;
+    padding: 4px;
+}
+
+.prev,
+.next {
+  background: #fff;
+  border: none;
+  padding: 10px;
+  color: #666;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+}
+
+.paginationItem {
+    background: #fff;
+    border: 2px solid #666;
+    padding: 10px 15px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .paginationItem.active {
+    border: 1px solid #888;
+    color: #888;
+    pointer-events: none;
+  }
+
+  .paginationItem span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+input{
+    height: 3.5rem;
+    font-family: 'Lato', sans-serif;;
+    border: 1px solid #b9b9b9;
+    color: #666;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+
+  input[type="text"] {
+    outline: 0;
+    width: 95%;
+    background: #fff;
+    padding: 0 1rem;
+    border-radius: .7rem;;
+    appearance: none;
+    transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+  }
+
+  input:not(:placeholder-shown) {
+    border-radius: .7rem .7rem .7rem .7rem;
+    width: 95%;
+  }
+
+
+.post{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.id-details {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.id{
+    width: 50%;
+    font-size: 20px;
+}
+
+.user-id{
+    width: 50%;
+    font-size: 20px;
+}
+
+.title {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.description{
+    font-size: 20px;
+}

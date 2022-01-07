@@ -1,0 +1,8 @@
+body {
+    max-width: 1200px;
+    min-width: 700px;
+    margin: auto;
+    background-color: rgb(240, 240, 240);
+    font-family: serif;
+}
+
